@@ -14,13 +14,13 @@
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="Main.html">Главная</a>
+          <a class="navigation-link" href="main.html">Главная</a>
         </li>>
         <li class="navigation-item">
           <a class="navigation-link" href="about.html">О Седоне</a>
         </li>>
         <li class="navigation-item">
-          <a class="navigation-link" href="hostels.html">Гостиницы</a>
+          <a class="navigation-link" href="hotels.html">Гостиницы</a>
         </li>>
       </ul>
       <ul class="navigation-list navigation-user">
@@ -42,36 +42,56 @@
   </header>
   <main class="main-catalog">
     <section class="filters">
-      <h1 class="filters-item">Гостиницы Седоны</h1>
+      <h1 class="filters-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Каталог</a>
+          <a class="breadcrumbs-link">Гостиницы</a>
         </li>
       </ul>
       <div class="filters-controls">
+        <p>Инфраструктура</p>
         <ul class="filters-infastructure">
+          <li class="filters-item"><input type="checkbox" name="pool" checked>
+            <label>Бассейн</label></li>
+          <li class="filters-item"><input type="checkbox" name="parking" checked>
+            <label>Парковка</label></li>
+          <li class="filters-item"><input type="checkbox" name="fi-fi">
+            <label>Wi-Fi</label></li>
         </ul>
+        <p>Тип жилья:</p>
         <ul class="filters-housing">
+          <li class="filters-item"><input type="radio" name="hotel" checked><label>Гостииница</label></li>
+          <li class="filters-item"><input type="radio" name="motel"><label>Мотель</label></li>
+          <li class="filters-item"><input type="radio" name="apartament"><label>Апартаменты</label></li>
         </ul>
         <div class="filters-price">
           <p class="filters-price-title">Стоимость, ₽:</p>
-          <input type="text" name="price-from" placeholder="0">
-          <input type="text" name="price-to" placeholder="9000">
+          <input class="filters-buttons" type="text" name="price-from" placeholder="0">
+          <input class="filters-buttons" type="text" name="price-to" placeholder="9000">
+          <div></div>
         </div>
         <div class="filters-buttons">
-          <input type="button">
+          <input class="filters-buttons" type="button" value="Применить">
+          <input class="filters-buttons" type="button" value="Сбросить">
         </div>
       </div>
     </section>
     <section class="info">
-      <p class="info-results">Инфраструктура:
+      <p class="info-results">Найдено гостиниц: 38
       </p>
-      <div class="info=sort">
+      <div class="info-sort">
+        <select name="info">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+        </select>
       </div>
       <div class="info-view">
+        <option></option>
+        <option></option>
+        <option></option>
       </div>
     </section>
     <div class="hotels">
@@ -81,11 +101,11 @@
         <li></li>
         <li></li>
       </ul>
-      <input type="button" name="load more" value="Загрузить еще">
+      <input type="button" name="load_more" value="Загрузить еще">
     </div>
     <div class="pagination">
       <ul class="pagination-list">
-        <li class="pagination-item"><a class="pagination-link">1</a></li>
+        <li class="pagination-item pagination-item--active">1</li>
         <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
         <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
         <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
@@ -93,8 +113,12 @@
         <li class="pagination-item"><a class="pagination-link" href="#">10</a></li>
       </ul>
       <div class="pagination-limit">
-        <p class="paginatiion-limit-label"></p>
-        <select class="pagination-limit-value" name="hotel"></select>
+        <p class="paginatiion-limit-label">Гостиниц на странице:</p>
+        <select class="pagination-limit-value" name="hotel">
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
       </div>
     </div>
   </main>
