@@ -53,7 +53,7 @@
     <section class="filters">
       <h1 class="filters-title">Гостиницы Седоны</h1>
       <div class="filters-controls">
-        <div class="filters-item">
+        <div class="filters-control">
           <p class="filters-title">Инфраструктура</p>
           <ul class="filters-infastructure">
             <li class="filters-item">
@@ -76,34 +76,38 @@
             </li>
           </ul>
         </div>
-        <p class="filters-housing">Тип жилья:</p>
+        <p class="filters-housing-title">Тип жилья:</p>
         <ul class="filters-housing-items">
-          <li class="filters-item"><input type="radio" name="hotel" checked><label>Гостииница</label></li>
-          <li class="filters-item"><input type="radio" name="motel"><label>Мотель</label></li>
-          <li class="filters-item"><input type="radio" name="apartament"><label>Апартаменты</label></li>
+          <li class="filters-item"><label>
+            <input type="radio" name="choose" value="hotel">Гостиница
+          </label></li>
+          <li class="filters-item"><label>
+            <input type="radio" name="choose" value="motel">Мотель
+          </label></li>
+          <li class="filters-item"><label>
+            <input type="radio" name="choose" value="apartament">Апартаменты
+          </label></li>
         </ul>
         <div class="filters-price">
           <p class="filters-price-title">Стоимость, ₽:</p>
-          <input class="filters-buttons" type="text" name="price-from" placeholder="0">
-          <input class="filters-buttons" type="text" name="price-to" placeholder="9000">
+          <input class="filters-price-from" type="text" name="price-from" placeholder="0">
+          <input class="filters-price-to" type="text" name="price-to" placeholder="9000">
           <div></div>
         </div>
         <div class="filters-buttons">
-          <input class="filters-buttons" type="button" value="Применить">
-          <input class="filters-buttons" type="button" value="Сбросить">
+          <button class="filters-button">Применить</button>
+          <button class="filters-button">Сбросить</button>
         </div>
       </div>
     </section>
     <section class="info">
       <p class="info-results">Найдено гостиниц: 38
       </p>
-      <div class="info-sort">
-        <select name="info">
+        <select name="info-sort">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-      </div>
       <div class="info-view">
         <a href="#" class="button button-light">
           <span class="visually-hidden">Показать список</span>
@@ -119,70 +123,92 @@
     <div class="hotels">
       <ul class="hotels-list">
         <li class="hotels-item">
-          <img class="product-card-image" src="" alt="">
-          <p>Amara Resort & Spa</p>
-          <div>
-            <span>Гостиница</span>
-            <span>От 4000 ₽</span>
+          <img class="hotels-item-image" src="#" alt="Amara Resort & Spa">
+          <p class="hotels-item-title">Amara Resort & Spa</p>
+          <div class="hotels-item-container">
+            <span class="hotels-item-type">Гостиница</span>
+            <span class="hotels-item-price">От 4000 ₽</span>
           </div>
-          <div>
-            <span>Подробнее</span>
-            <span>В избранное</span>
+          <div class="hotels-item-container">
+            <a class="hotels-item-link" href="#">Подробнее</a>
+            <button class="hotels-item-favorite">В избранное</button>
           </div>
-          <div>
-            <span>4 звезды</span>
-            <span>Рейтинг: 8,5</span>
-          </div>
-        <li class="hotels-item">
-          <img class="product-card-image" src="" alt="">
-          <p>Desert Quail Inn</p>
-          <div>
-            <span>Гостиница</span>
-            <span>От 3000 ₽</span>
-          </div>
-          <div>
-            <span>Подробнее</span>
-            <span>В избранное</span>
-          </div>
-          <div>
-            <span>3 звезды</span>
-            <span>Рейтинг: 8,9</span>
+          <div class="hotels-item-container">
+            <span class="hotels-star-rating">
+              4 звезды
+            </span>
+            <p class="hotels-rating">
+              Рейтинг: 
+              <span class="hotels-rating-number">8,5</span>
+            </p>
           </div>
         </li>
         <li class="hotels-item">
-          <img class="product-card-image" src="" alt="">
-          <p>Villas at Poco Diablo</p>
-          <div>
-            <span>Гостиница</span>
-            <span>От 2000 ₽</span>
+          <img class="hotels-item-image" src="#" alt="Amara Resort & Spa">
+          <p class="hotels-item-title">Desert Quail Inn</p>
+          <div class="hotels-item-container">
+            <span class="hotels-item-type">Гостиница</span>
+            <span class="hotels-item-price">От 3000 ₽</span>
           </div>
-          <div>
-            <span>Подробнее</span>
-            <span>В избранное</span>
+          <div class="hotels-item-container">
+            <a class="hotels-item-link" href="#">Подробнее</a>
+            <button class="hotels-item-favorite">В избранное</button>
           </div>
-          <div>
-            <span>2 звезды</span>
-            <span>Рейтинг: 9,2 </span>
+          <div class="hotels-item-container">
+            <span class="hotels-star-rating">
+              3 звезды
+            </span>
+            <p class="hotels-rating">
+              Рейтинг: 
+              <span class="hotels-rating-number">8,5</span>
+            </p>
           </div>
         </li>
         <li class="hotels-item">
-          <img class="product-card-image" src="" alt="">
-          <p>GreenTree Inn</p>
-          <div>
-            <span>Гостиница</span>
-            <span>От 3000 ₽</span>
+          <img class="hotels-item-image" src="#" alt="Amara Resort & Spa">
+          <p class="hotels-item-title">Villas at Poco Diablo</p>
+          <div class="hotels-item-container">
+            <span class="hotels-item-type">Гостиница</span>
+            <span class="hotels-item-price">От 2000 ₽</span>
           </div>
-          <div>
-            <span>Подробнее</span>
-            <span>В избранное</span>
+          <div class="hotels-item-container">
+            <a class="hotels-item-link" href="#">Подробнее</a>
+            <button class="hotels-item-favorite">В избранное</button>
           </div>
-          <div>
-            <span>2 звезды</span>
-            <span>Рейтинг: 9,2 </span>
+          <div class="hotels-item-container">
+            <span class="hotels-star-rating">
+              2 звезды
+            </span>
+            <p class="hotels-rating">
+              Рейтинг: 
+              <span class="hotels-rating-number">8,5</span>
+            </p>
+          </div>
+        </li>
+        <li class="hotels-item">
+          <img class="hotels-item-image" src="#" alt="Amara Resort & Spa">
+          <p class="hotels-item-title">GreenTree Inn</p>
+          <div class="hotels-item-container">
+            <span class="hotels-item-type">Гостиница</span>
+            <span class="hotels-item-price">От 3000 ₽</span>
+          </div>
+          <div class="hotels-item-container">
+            <a class="hotels-item-link" href="#">Подробнее</a>
+            <button class="hotels-item-favorite">В избранное</button>
+          </div>
+          <div class="hotels-item-container">
+            <span class="hotels-star-rating">
+              2 звезды
+            </span>
+            <p class="hotels-rating">
+              Рейтинг: 
+              <span class="hotels-rating-number">8,5</span>
+            </p>
           </div>
         </li>
       </ul>
-      <input type="button" name="load_more" value="Загрузить еще">
+    </div>
+      <button class="load-more">Загрузить еще</button>
     </div>
     <div class="pagination">
       <ul class="pagination-list">
@@ -195,26 +221,26 @@
       </ul>
       <div class="pagination-limit">
         <p class="paginatiion-limit-label">Гостиниц на странице:</p>
-        <select class="pagination-limit-value" name="hotel">
-          <option></option>
-          <option></option>
-          <option></option>
+        <select class="pagination-limit" name="pagination-limit-value">
+          <option class="pagination-limit-item" value="4">4</option>
+          <option class="pagination-limit-item" value="6">6</option>
+          <option class="pagination-limit-item" value="8">8</option>
         </select>
       </div>
     </div>
   </main>
   <footer class="page-footer">
-    <section class="mailing">
-      <h4 class="mailing-title">Подпишитесь на рассылку</h4>
-      <p class="mailing-info">Только полезная информация и никакого спама,
+    <section class="subscribe">
+      <h4 class="subscribe-title">Подпишитесь на рассылку</h4>
+      <p class="subscribe-discription">Только полезная информация и никакого спама,
         честное бойскаутское!</p>
-      <form class="mailing-subscribe">
-        <input class="mailing-input" type="email" name="email" placeholder="Ваш e-mail">
-        <input class="mailing-button" type="button" name="subcsribe" value="Подписаться">
+      <form class="subscribe-form">
+        <input class="subscribe-email" type="email" name="email" placeholder="Ваш e-mail">
+        <button class="subscribe-button">Подписаться</button>
       </form>
     </section>
     <section class="footer-social">
-      <h2 class="page-footer-title">Давайте дружить</h2>
+      <h2 class="footer-social-title">Давайте дружить</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="button" href="https://twitter.com/htmlacademy_ru">
@@ -232,9 +258,9 @@
           </a>
         </li>
       </ul>
+      <a class="contacts-phone" href="tel:+7-s(812)-812-12-12">+7-(812)-812-12-12</a>
+    <a class="footer-social-logo" href="#"><img class="footer-social-logo-image" src="#" alt="Логотип «.html academy»."></a>
     </section>
-    <a class="contacts-phone" href="tel:+7-(812)-812-12-12">+7-(812)-812-12-12</a>
-    <a href=""><img class="footer-contacts-logo" src="" alt="Логотип «.html academy»."></a>
   </footer>
 </body>
 
