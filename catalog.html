@@ -53,15 +53,29 @@
     <section class="filters">
       <h1 class="filters-title">Гостиницы Седоны</h1>
       <div class="filters-controls">
-        <p>Инфраструктура</p>
-        <ul class="filters-infastructure">
-          <li class="filters-item"><input type="checkbox" name="pool" checked>
-            <label>Бассейн</label></li>
-          <li class="filters-item"><input type="checkbox" name="parking" checked>
-            <label>Парковка</label></li>
-          <li class="filters-item"><input type="checkbox" name="wi-fi">
-            <label>Wi-Fi</label></li>
-        </ul>
+        <div class="filters-item">
+          <p class="filters-title">Инфраструктура</p>
+          <ul class="filters-infastructure">
+            <li class="filters-item">
+              <label class="filters-label">
+                <input class="filters-checkbox" type="checkbox" name="pool" checked>
+                Бассейн
+              </label>
+            </li>
+            <li class="filters-item">
+              <label class="filters-label">
+                <input class="filters-checkbox" type="checkbox" name="parking" checked>
+                Парковка
+              </label>
+            </li>
+            <li class="filters-item">
+              <label class="filters-label">
+                <input class="filters-checkbox" type="checkbox" name="wi-fi">
+                Wi-Fi
+              </label>
+            </li>
+          </ul>
+        </div>
         <p>Тип жилья:</p>
         <ul class="filters-housing">
           <li class="filters-item"><input type="radio" name="hotel" checked><label>Гостииница</label></li>
