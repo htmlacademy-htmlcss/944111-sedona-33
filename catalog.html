@@ -9,7 +9,7 @@
 <body>
   <header class="page-header">
     <a class="page-logo" href="#">
-      <img class="page-image" src="#" alt="логотип">
+      <img class="page-logo-image" src="#" alt="логотип">
     </a>
     <nav class="navigation">
       <ul class="navigation-list">
@@ -23,7 +23,7 @@
           <a class="navigation-link" href="hotels.html">Гостиницы</a>
         </li>
       </ul>
-      <ul class="navigation-list navigation-user">
+      <ul class="navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">Поиск</span>
@@ -79,13 +79,13 @@
         <div class="filters-control">
           <p class="filters-housing-title">Тип жилья:</p>
           <ul class="filters-housing-items">
-            <li class="filters-item"><label class="filters items">
+            <li class="filters-item"><label class="filters-label">
                 <input class="filters-radio" type="radio" name="choose" value="hotel">Гостиница
               </label></li>
-            <li class="filters-item"><label class="filters items">
+            <li class="filters-item"><label class="filters-label">
                 <input class="filters-radio" type="radio" name="choose" value="motel">Мотель
               </label></li>
-            <li class="filters-item"><label class="filters items">
+            <li class="filters-item"><label class="filters-label">
                 <input class="filters-radio" type="radio" name="choose" value="apartament">Апартаменты
               </label></li>
           </ul>
@@ -104,21 +104,21 @@
     </section>
     <section class="info">
       <p class="info-results">Найдено гостиниц: 38</p>
-      <select name="info-sort">
-        <option value="cheap">Сначала дешевые</option>
-        <option value="expensive">Сначала дорогие</option>
-        <option value="popular">Сначала популярные</option>
+      <select class="info-sort" name="info-sort">
+        <option class="info-sort-item" value="cheap">Сначала дешевые</option>
+        <option class="info-sort-item" value="expensive">Сначала дорогие</option>
+        <option class="info-sort-item" value="popular">Сначала популярные</option>
       </select>
       <ul class="info-view">
-        <li class="info-items"><label class="info-item">
-            <input class="info-cart" type="radio" name="carts" value="show-list">Показать список
+        <li class="info-view-item"><label class="info-view-label">
+            <input class="info-view-radio" type="radio" name="carts" value="show-list">Показать список
           </label>
         </li>
-        <li class="info-items"><label class="info-item">
-            <input class="info-cart" type="radio" name="carts" value="show-carts">Показать карточки
+        <li class="info-view-item"><label class="info-view-label">
+            <input class="info-view-radio" type="radio" name="carts" value="show-carts">Показать карточки
           </label></li>
-        <li class="info-items"><label class="info-item">
-            <input class="info-cart" type="radio" name="carts" value="list">Список
+        <li class="info-view-item"><label class="info-view-label">
+            <input class="info-view-radio" type="radio" name="carts" value="list">Список
           </label></li>
       </ul>
     </section>
