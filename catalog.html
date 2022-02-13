@@ -8,19 +8,19 @@
 
 <body>
   <header class="page-header">
-    <a class="page-logo" href="#">
-      <img class="page-logo-image" src="#" alt="логотип">
-    </a>
     <nav class="navigation">
+      <a class="page-logo" href="#">
+        <img class="page-logo-image" src="#" alt="логотип">
+      </a>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="main.html">Главная</a>
+          <a class="navigation-link" href="#">Главная</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="about.html">О Седоне</a>
+          <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="hotels.html">Гостиницы</a>
+          <a class="navigation-link" href="#">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-user">
@@ -109,24 +109,24 @@
         <option class="info-sort-item" value="expensive">Сначала дорогие</option>
         <option class="info-sort-item" value="popular">Сначала популярные</option>
       </select>
-      <ul class="info-view">
-        <li class="info-view-item"><label class="info-view-label">
+      <div class="info-view">
+        <a href="#" class="info-view-item"><label class="info-view-label">
             <input class="info-view-radio" type="radio" name="carts" value="show-list">Показать список
           </label>
-        </li>
-        <li class="info-view-item"><label class="info-view-label">
+        </a>
+        <a href="#" class="info-view-item"><label class="info-view-label">
             <input class="info-view-radio" type="radio" name="carts" value="show-carts">Показать карточки
-          </label></li>
-        <li class="info-view-item"><label class="info-view-label">
+          </label></a>
+        <a href="#" class="info-view-item"><label class="info-view-label">
             <input class="info-view-radio" type="radio" name="carts" value="list">Список
-          </label></li>
-      </ul>
+          </label></a>
+        </div>
     </section>
     <div class="hotels">
       <ul class="hotels-list">
         <li class="hotels-item">
-          <img class="hotels-item-image" src="#" alt="Amara Resort & Spa">
-          <p class="hotels-item-title">Amara Resort & Spa</p>
+          <a class="hotels-list-link" href="#"><img class="hotels-item-image" src="#" alt="Amara Resort & Spa"></a>
+          <h2 class="hotels-item-title">Amara Resort & Spa</h2>
           <div class="hotels-item-container">
             <span class="hotels-item-type">Гостиница</span>
             <span class="hotels-item-price">От 4000 ₽</span>
@@ -146,8 +146,8 @@
           </div>
         </li>
         <li class="hotels-item">
-          <img class="hotels-item-image" src="#" alt="Desert Quail Inn">
-          <p class="hotels-item-title">Desert Quail Inn</p>
+          <a class="hotels-list-link" href="#"><img class="hotels-item-image" src="#" alt="Desert Quail Inn"></a>
+          <h2 class="hotels-item-title">Desert Quail Inn</h2>
           <div class="hotels-item-container">
             <span class="hotels-item-type">Гостиница</span>
             <span class="hotels-item-price">От 3000 ₽</span>
@@ -167,8 +167,8 @@
           </div>
         </li>
         <li class="hotels-item">
-          <img class="hotels-item-image" src="#" alt="Villas at Poco Diablo">
-          <p class="hotels-item-title">Villas at Poco Diablo</p>
+          <a class="hotels-list-link" href="#"><img class="hotels-item-image" src="#" alt="Villas at Poco Diablo"></a>
+          <h2 class="hotels-item-title">Villas at Poco Diablo</h2>
           <div class="hotels-item-container">
             <span class="hotels-item-type">Гостиница</span>
             <span class="hotels-item-price">От 2000 ₽</span>
@@ -188,8 +188,8 @@
           </div>
         </li>
         <li class="hotels-item">
-          <img class="hotels-item-image" src="#" alt="GreenTree Inn">
-          <p class="hotels-item-title">GreenTree Inn</p>
+          <a class="hotels-list-link" href="#"><img class="hotels-item-image" src="#" alt="GreenTree Inn"></a>
+          <h2 class="hotels-item-title">GreenTree Inn</h2>
           <div class="hotels-item-container">
             <span class="hotels-item-type">Гостиница</span>
             <span class="hotels-item-price">От 3000 ₽</span>
@@ -235,9 +235,9 @@
       <h4 class="subscribe-title">Подпишитесь на рассылку</h4>
       <p class="subscribe-discription">Только полезная информация и никакого спама,
         честное бойскаутское!</p>
-      <form class="subscribe-form">
+      <form action="#" method="post" class="subscribe-form">
         <input class="subscribe-email" type="email" name="email" placeholder="Ваш e-mail">
-        <button class="subscribe-button">Подписаться</button>
+        <button type="submit" class="subscribe-button">Подписаться</button>
       </form>
     </section>
     <section class="footer-social">
