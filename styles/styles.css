@@ -115,20 +115,27 @@ text-align:Center;
 vertical-align:top;
 }
 .search-button {
+width: 575px;
+height: 30px;
+left: 904px;
+top: 158px;
+  
 font-family: 'PT Sans';
 font-style: normal;
 font-weight: 700;
 font-size: 20px;
 line-height: 36px;
-text-align:center;
-vertical-align:top;
+
+  
+text-align: center;
+text-transform: uppercase;
 color:#FFFFFF;
 
 width: 575px;
 height: 60px;
 left: 904px;
 top: 145px;
-background:#756257 ;
+background: #756257;
 border-radius: 10px;
 }
 
