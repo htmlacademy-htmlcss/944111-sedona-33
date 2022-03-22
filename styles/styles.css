@@ -91,10 +91,11 @@
 .main-index {
     color: #000000;
     background-color: #ffffff;
-    background-image: url("images/index-bg.jpg");
+    background-image: url("images/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
+
 .search-title {
 font-family:PT Sans;
 font-style:Bold;
@@ -121,7 +122,15 @@ line-height:36px;
 line-height:139%;
 text-align:center;
 vertical-align:top;
+margin: 0 auto;
+width: 575px;
+height: 60px;
+left: 904px;
+top: 145px;
+background:#756257 ;
+border-radius: 10px;
 }
+
 
 .subscribe-title {
 font-family:PT Sans;
