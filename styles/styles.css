@@ -30,9 +30,10 @@ body {
 }
 
 .navigation-link {
+  line-height: 26px;
   line-height: 24px;
   font-weight: 700;
-  color: inherit;
+  color: #242424;
   background-color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
@@ -110,8 +111,7 @@ body {
 }
 
 .services-item {
-  width: 400px;
-  min-height: 384px;
+  width: 100%;
   color: #000000;
   background: rgba(131, 179, 211, 0.12);
 }
@@ -125,7 +125,6 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: Center;
-  vertical-align: top;
 }
 
 .search-button {
@@ -192,8 +191,6 @@ body {
 
 /* Title */
 .advantages-title {
-  font-family: "PT Sans"sans-serif;
-  font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
